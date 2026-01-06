@@ -1,0 +1,18 @@
+Using the Maven Plugin
+=======================
+
+Step 1: Make sure the spring-boot-maven-plugin is present inside the pom.xml
+Step 2: Run the command: ./mvnw clean install spring-boot:build-image
+Step 3: This creates a docker image.
+Step 4: You can also specify the docker image name using the configuration
+
+this is the required plugin, it is already present by default
+
+<build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
